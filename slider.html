@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        #slider{
+            overflow:hidden;
+        }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+        #slider figre img{
+            float: left;
+            width: 20%;
+
+        }
+
+        @keyframes slider{
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+
+            }
+            45%{
+                left: -100%;
+                
+            }
+            50%{
+                left: -200%;
+                
+            }
+            70%{
+                left: -200%;
+                
+            }
+            75%{
+                left: -300%;
+                
+            }
+            95%{
+                left: -300%;
+                
+            }
+            100%{
+                left: -400%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <figure>
+            <img src="slider images/f.jpg"  height="300px" width="900px">
+            <!-- <img src="slider images/b.jpg" height="300px" width="900px"> -->
+            <img src="slider images/cap.jpg"  height="300px" width="900px">
+            <img src="slider images/c.jpg"  height="300px" width="900px">
+            <img src="slider images/candle.jpg"  height="300px" width="900px">
+            <img src="slider images/f.jpg"  height="300px" width="900px">
+           
+            
+
+
+        </figure>
+
+    </div>
+    
+</body>
+</html>
